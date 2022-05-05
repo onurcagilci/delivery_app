@@ -1,28 +1,34 @@
 import 'package:delivery_app/view/home/home_view.dart';
 import 'package:delivery_app/view/sign_in/sign_in_view.dart';
 import 'package:delivery_app/view/sign_up/sign_up_view.dart';
+import 'package:delivery_app/view/splash/view/splash_view.dart';
 import 'package:get/get.dart';
 
 
 appRoutes() => [
   GetPage(
+    name: '/splash',
+    page: () =>  SplashView(),
+    transition: Transition.noTransition,
+    transitionDuration: Duration(milliseconds: 500),
+  ),GetPage(
     name: '/home',
     page: () => const HomeView(),
-    transition: Transition.leftToRightWithFade,
+    transition: Transition.noTransition,
     transitionDuration: Duration(milliseconds: 500),
   ),
   GetPage(
     name: '/sign_in',
     page: () => const SignInView(),
     middlewares: [MyMiddelware()],
-    transition: Transition.rightToLeftWithFade,
+    transition: Transition.noTransition,
     transitionDuration: Duration(milliseconds: 500),
   ),
   GetPage(
     name: '/sign_up',
     page: () => const SignUpView(),
     middlewares: [MyMiddelware()],
-    transition: Transition.leftToRightWithFade,
+    transition: Transition.noTransition,
     transitionDuration: Duration(milliseconds: 500),
   ),
 ];

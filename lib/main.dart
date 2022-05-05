@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Delivery App',
-      initialRoute: '/sign_in',
+      initialRoute: '/splash',
       getPages: appRoutes(),
     );
   }
