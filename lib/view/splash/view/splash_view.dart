@@ -1,6 +1,6 @@
 import 'package:delivery_app/core/constant.dart';
 import 'package:delivery_app/view/onboarding/onboarding_view.dart';
-import 'package:delivery_app/view/sign_in/sign_in_view.dart';
+import 'package:delivery_app/view/auth/auth_view.dart';
 import 'package:flutter/material.dart';
 import 'package:splash_screen_view/SplashScreenView.dart';
 
@@ -18,7 +18,7 @@ class _SplashViewState extends State<SplashView> {
   Widget isToken()  {
     Widget validPage;
     if(deviceId.read('deviceId').toString().isNotEmpty){
-      validPage = SignInView();
+      validPage = Authview();
     }else{
       validPage=OnboardingView();
     }

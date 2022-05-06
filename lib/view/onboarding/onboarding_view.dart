@@ -134,7 +134,7 @@ class _OnboardingViewState extends State<OnboardingView> {
                       style: TextStyle(color: Color(0xffFF460A)),
                     ),
                     onPressed: () {
-                      Get.toNamed("/sign_in");
+                      Get.toNamed("/auth");
                     },
                   ),
                 ),
